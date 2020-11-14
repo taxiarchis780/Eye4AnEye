@@ -9,9 +9,9 @@ send an automated diagnosis for cataract and blood presense *(for now)* in the e
 And can later be reviewed by an actual doctor.
 
 ### Setup
-You simply have to have python 3.7.9 installed on you computer
-Additionally you have to have the packages in the requirements.txt file installed with their specified version
-to do that you can simply run the following command on your command line shell (e.g. For Windows: cmd.exe)
+You simply have to have python 3.7.9 installed on you computer.
+Additionally you have to have the packages in the requirements.txt file installed with their specified version.
+To do that you can simply run the following command on your command line shell (e.g. For Windows: cmd.exe)
 command: pip install -r requirements
 
 After you have completed the setup process you can run the main.pyw file.
@@ -23,5 +23,5 @@ Make sure you have selected the correct file. You can do that by checking the fu
 Then you can now press the "Start" button and let python do its magic!
 Wait for a couple of seconds and a new comma separated file is going to be generated with your results.
 You can now use the program again without worrying about the results.csv file as it is going to append any changes.
-After you are finished you can send the results.csv and image files that you have processed
+After you are finished you can send the results.csv and image files that you have processed.
 
