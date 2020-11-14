@@ -16,9 +16,9 @@ class cataract:
 
       h_min = 0 #minimum hue
       h_max = 227 #maximum hue
-      s_min = 25 #minimum saturation
+      s_min = 35 #minimum saturation
       s_max = 70 #maximum saturation
-      v_min = 25 #minimum value aka brightness
+      v_min = 35 #minimum value aka brightness
       v_max = 255 #maximum value ...
 
 
@@ -61,7 +61,7 @@ class BloodInChamber:
          for j in range(self.img.shape[1]):
             a = self.img[i, j] #this variable is assigned as an array that holds the three BGR values of the pixel at p(i,j)
 
-            if a[2] >= 20 and a[0] <= 30 and a[1] <= 20: #check whether or not the said pixel p(i,j) is red
+            if a[2] >= 20 and a[0] <= 30 and a[1] <= 50: #check whether or not the said pixel p(i,j) is red
                self.counter += 1
                #print(self.img[i, j], "cords", str(i), str(j)) //ignore
                continue

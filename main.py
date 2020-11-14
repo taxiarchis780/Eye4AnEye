@@ -64,7 +64,7 @@ class Main:
             myObj = Eye4AnEye.cataract(self.text.get()) #call the cataract function with the file directory as input
             myObj2 = Eye4AnEye.BloodInChamber(self.text.get())
             print(myObj2.BDetector())
-            if myObj.CDetector() <= 70: #70 is the threshold
+            if myObj.CDetector() <= 5: #70 is the threshold
                 handler.write(self.newtext[-1] + ", " + str(myObj.CDetector()) + "%" + " | Insufficent evidence of cataract" + ", " ) # write the first part starting from the name fo the file the ‰ and the more readable result
                 if myObj2.BDetector() <= 200: # write to the file the second part
                     handler.write(str(myObj2.BDetector()) + "%" + " | Insufficent evidence of blood presense" "\n")
@@ -73,7 +73,7 @@ class Main:
 
                 #print("Insufficent evidence of cataract") //ignore
 
-            elif myObj2.BDetector() > 200:
+            elif myObj2.BDetector() > 5:
                 if myObj.CDetector() > 70:
                     handler.write(self.newtext[-1] + ", " + str(myObj.CDetector()) + "%" + " | Cataract detected" + ", " + str(myObj2.BDetector()) + "%" + " | Possible blood presense" "\n")
                 else:
